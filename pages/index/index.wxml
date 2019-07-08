@@ -1,0 +1,20 @@
+<view class='container'>
+
+    <block wx:for="{{wineList}}" data-id="{{1000}}" wx:for-item="dataItem" wx:key="{{id}}">
+      <view class='data-item'  bindtap="itemClick"  data-index="{{index}}" data-id="{{1000}}">
+         <view data-id="{{index}}" data-hi="{{dataItem.groupIndex}}" style="right:{{dataItem.right}}px;transition:{{dataItem.transition}}" bindtouchstart="startCardItem" bindtouchmove="moveCardItem" bindtouchend="endCardItem" class="data-back {{dataItem.open?'open':'close'}}">
+          <view class='bottom-line'></view>
+        </view>
+        <view class="delete" hover-class='btn-hover' bindtap="deleteWine" id="999">
+          <image src="../../images/Delete@2x.png" style=" width:76rpx;height:76rpx;"></image>
+          <text class='deleteText'>删除设备</text>
+        </view>
+        <view class="manage" hover-class='btn-hover' bindtap='unSale' id="998">
+          <image src="../../images/Down@2x.png" style=" width:76rpx;height:76rpx;"></image>
+        </view>
+        <view class="share" hover-class='btn-hover' bindtap="onSale" id="997">
+          <image src="../../images/Up@2x.png" style=" width:76rpx;height:76rpx;"></image>
+        </view>
+      </view>
+    </block>
+</view>

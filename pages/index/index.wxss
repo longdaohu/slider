@@ -1,0 +1,69 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.data-item {
+  margin-top: 0rpx;
+  height: 225rpx;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 15rpx 0rpx 0rpx 15rpx; 
+}
+.bottom-line {
+  position: absolute;
+  bottom: 2rpx;
+  background-color: #dedede;
+  height: 2rpx;
+  width: 100%;
+}
+.delete {
+  width: 66px;
+  height: 100%;
+  font-size: 45px;
+  color: #fff;
+  line-height: 225rpx;
+  text-align: center;
+  position: absolute;
+  right: 0;
+}
+.manage {
+  right: 66px;
+  width: 66px;
+  height: 100%;
+  font-size: 45px;
+  color: #fff;
+  line-height: 225rpx;
+  text-align: center;
+  position: absolute;
+}
+
+.share {
+  right: 132px;
+  width: 66px;
+  height: 100%;
+  font-size: 45px;
+  color: #fff;
+  line-height: 225rpx;
+  text-align: center;
+  position: absolute;
+}
+
+.data-back {
+  box-sizing: border-box;
+  width: 100%;
+  height: 225rpx;
+  background: green;
+  position: absolute;
+  z-index: 2;
+}
+
+/* 底层是否展开 */
+.open {
+  right: 125px !important;
+}
+.close {
+  right: 0;
+}
